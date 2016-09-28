@@ -1,1 +1,0 @@
-cat z1.txt | perl -laF";" -e 'if ($F[4]>1e+6) {print $F[8]; $c++}}{$.++; print $.." ".$c'
