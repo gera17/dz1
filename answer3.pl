@@ -6,7 +6,8 @@ $count = 0;
 @array;
 while (my $str = <>) {
 	my @list = split (/;/, $str);
-	$array[$count] = \@list;
+	#$array[$count] = \@list;
+	@array[$count] = @list;
 	$count++;
 }
 print ("-"x20);
